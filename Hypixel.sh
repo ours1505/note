@@ -5,7 +5,8 @@ lsmod | grep bbr
 apt update
 apt upgrade -y
 wget https://raw.githubusercontent.com/ours1505/note/master/ZBProxy-linux-amd64-v1
-chmod +x ZBProxy-linux-amd64
+chmod +x ZBProxy-linux-amd64-v1
+wget https://raw.githubusercontent.com/ours1505/note/main/ZBProxy.json
 cat << EOF > /usr/lib/systemd/system/ZBProxy.service
 [Unit]
 Description=ZBProxy
