@@ -4,7 +4,7 @@ echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 lsmod | grep bbr
 apt update
 apt upgrade -y
-wget https://github.com/layou233/ZBProxy/releases/download/3.0-rc.4/ZBProxy-linux-amd64
+wget https://raw.githubusercontent.com/ours1505/note/master/ZBProxy-linux-amd64-v1
 chmod +x ZBProxy-linux-amd64
 cat << EOF > /usr/lib/systemd/system/ZBProxy.service
 [Unit]
