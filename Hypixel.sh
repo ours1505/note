@@ -22,3 +22,4 @@ EOF
 
 systemctl enable ZBProxy
 systemctl start ZBProxy
+reboot
