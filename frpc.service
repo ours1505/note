@@ -3,6 +3,6 @@ Description=frpc
 [Service]
 Type=simple
 WorkingDirectory=/root/
-ExecStart=/root/frpc_linux_amd64 -u TOKEN -p FRPID
+ExecStart=/root/frpc_linux_amd64 -u ACCOUNTTOKEN -p FRPID
 [Install]
 WantedBy=multi-user.target
