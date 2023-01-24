@@ -1,0 +1,8 @@
+[Unit]
+Description=frpc
+[Service]
+Type=simple
+WorkingDirectory=/root/
+ExecStart=/root/frpc_linux_amd64 -u TOKEN -p FRPID
+[Install]
+WantedBy=multi-user.target
