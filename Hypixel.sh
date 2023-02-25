@@ -9,6 +9,7 @@ wget https://github.com/ours1505/note/raw/main/ZBProxy.json
 sed "s?NameForChange?$(curl https://api.zsshop.cf/MCName.txt)?" ZBProxy.json
 wget -O /usr/lib/systemd/system/ZBProxy.service https://github.com/ours1505/note/raw/main/ZBProxy.service
 chmod +x /usr/lib/systemd/system/ZBProxy.service
+sed "s?NameForChange?$(curl https://api.zsshop.cf/MCName.txt)?" ZBProxy.json
 
 systemctl enable ZBProxy
 systemctl start ZBProxy
