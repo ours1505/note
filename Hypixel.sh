@@ -8,7 +8,6 @@ chmod +x ZBProxy-linux-amd64-v1
 wget https://github.com/ours1505/note/raw/main/ZBProxy.json
 wget -O /usr/lib/systemd/system/ZBProxy.service https://github.com/ours1505/note/raw/main/ZBProxy.service
 chmod +x /usr/lib/systemd/system/ZBProxy.service
-input = '["NameForChange"]'
-sed -i "s|"$input"|$(curl https://api.zsshop.cf/MCName.txt)|" ZBProxy.json
+sed -iep "s|"NAMEFORCHANGE"|$(curl https://api.zsshop.cf/MCName.txt)|" ZBProxy.json
 systemctl enable ZBProxy
 systemctl start ZBProxy
