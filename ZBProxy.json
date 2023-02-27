@@ -35,6 +35,6 @@
         }
     ],
     "Lists": {
-    "MCName": ["NameForChange"]
+    "MCName": NAMEFORCHANGE
     }
 }
