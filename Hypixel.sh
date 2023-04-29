@@ -10,7 +10,6 @@ systemctl enable ZBProxy
 systemctl start ZBProxy
 apt update
 apt install iptables -y
-iptables -P INPUT DROP
 iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
 iptables -A INPUT -s 154.7.180.101 -p all -j ACCEPT
 iptables -A INPUT -s 159.75.98.102 -p all -j ACCEPT
@@ -19,3 +18,5 @@ iptables -A INPUT -s 16.162.93.184 -p all -j ACCEPT
 iptables -A INPUT -s 54.238.208.44 -p all -j ACCEPT
 iptables -A INPUT -s 103.170.233.181 -p all -j ACCEPT
 iptables -A INPUT -s 103.170.233.0/24 -p all -j ACCEPT
+iptables -P INPUT DROP
+iptables -P OUTPUT ACCEPT
