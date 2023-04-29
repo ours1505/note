@@ -9,7 +9,7 @@ sed -i "s|"NAMEFORCHANGE"|$(curl https://api.zsshop.cf/MCName.txt)|" ZBProxy.jso
 systemctl enable ZBProxy
 systemctl start ZBProxy
 apt update
-apt install iptables -y
+# apt install iptables -y
 iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
 iptables -A INPUT -s 154.7.180.101 -p all -j ACCEPT
 iptables -A INPUT -s 159.75.98.102 -p all -j ACCEPT
