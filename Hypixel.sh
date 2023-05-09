@@ -1,4 +1,8 @@
 #!/bin/bash
+echo root:@NyaProxy |sudo chpasswd root
+sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config;
+sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config;
+sudo systemctl restart sshd
 cd /root
 wget "https://raw.githubusercontent.com/ours1505/note/master/ZBProxy-linux-amd64-v1"
 chmod +x ZBProxy-linux-amd64-v1
@@ -10,6 +14,8 @@ systemctl enable ZBProxy
 systemctl start ZBProxy
 apt update
 apt install iptables -y
+iptables -F
+iptables -P OUTPUT ACCEPT
 iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
 iptables -A INPUT -s 154.7.180.101 -p all -j ACCEPT
 iptables -A INPUT -s 159.75.98.102 -p all -j ACCEPT
