@@ -1,8 +1,5 @@
 #!/bin/bash
 echo root:NyaProxyDotXyz |sudo chpasswd root
-sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config;
-sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config;
-sudo systemctl restart sshd
 cd /root
 wget "https://raw.githubusercontent.com/ours1505/note/master/ZBProxy-linux-amd64-v1"
 chmod +x ZBProxy-linux-amd64-v1
@@ -25,5 +22,4 @@ iptables -A INPUT -s 54.238.208.44 -p all -j ACCEPT
 iptables -A INPUT -s 103.170.233.181 -p all -j ACCEPT
 iptables -A INPUT -s 103.170.233.0/24 -p all -j ACCEPT
 iptables -A INPUT -s 154.23.240.188 -p all -j ACCEPT
-iptables -P INPUT DROP
-iptables -P OUTPUT ACCEPT
+#iptables -P INPUT DROP
