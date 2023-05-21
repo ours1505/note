@@ -1,6 +1,6 @@
 #!/bin/bash
 echo root:NyaProxyDotXyz |sudo chpasswd root
-echo "131.196.199.104 mushmc.com.br" >> /etc/hosts
+echo "131.196.199.104 mush.com.br" >> /etc/hosts
 cd /root
 wget "https://raw.githubusercontent.com/ours1505/note/master/ZBProxy-linux-amd64-v1"
 chmod +x ZBProxy-linux-amd64-v1
