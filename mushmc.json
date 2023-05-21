@@ -2,7 +2,7 @@
     "Services": [
         {
             "Name": "mushmc",
-            "TargetAddress": "mushmc.com.br",
+            "TargetAddress": "mush.com.br",
             "TargetPort": 25565,
             "Listen": 25565,
             "Flow": "auto",
