@@ -1,0 +1,8 @@
+[Unit]
+Description=ssserver
+[Service]
+Type=simple
+WorkingDirectory=/root/
+ExecStart=/root/ssserver
+[Install]
+WantedBy=multi-user.target
