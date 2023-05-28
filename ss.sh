@@ -8,3 +8,6 @@ wget -O /usr/lib/systemd/system/ssserver.service https://raw.githubusercontent.c
 chmod +x /usr/lib/systemd/system/ssserver.service
 systemctl enable ssserver
 systemctl start ssserver
+iptables -A OUTPUT -p tcp -d 172.65.0.0/16 --dport 25565 -j ACCEPT
+iptables -A OUTPUT -p tcp -d 209.222.114.0/24 --dport 25565 -j ACCEPT
+iptables -A OUTPUT -j DROP
