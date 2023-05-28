@@ -1,6 +1,14 @@
 {
   "inbounds": [
     {
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      },
+    {
       "port": 25565, // 服务器监听端口
       "protocol": "vmess",    // 主传入协议
       "settings": {
