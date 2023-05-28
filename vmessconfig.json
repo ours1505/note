@@ -17,30 +17,20 @@
     {
       "protocol": "freedom",  // 主传出协议
       "settings": {}
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blackhole"
     }
   ],
   "routing": {
     "rules": [
       {
-        "type": "field",
-        "ip": [
-          "geoip:private" // 排除内网地址
-        ],
-        "outboundTag": "direct"
-      },
-      {
-        "type": "field",
-        "ip": [
-          "172.65.0.0/16",
-          "209.222.114.0/24"
-        ],
-        "outboundTag": "proxy"
-      },
-      {
-        "type": "field",
-        "outboundTag": "blocked"
+         "type": "field",
+         "protocol": ["http", "tls", "bittorrent"],
+         "outboundTag": "blackhole"
       }
-    ],
-    "strategy": "rules",
+    ]
   }
 }
