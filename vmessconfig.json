@@ -35,16 +35,21 @@
     "rules": [
       {
          "type": "field",
-         "protocol": ["http", "tls", "bittorrent"],
-         "outboundTag": "blackhole"
-      },
-       {
-         "type": "field",
           "ip": [
             "209.222.114.0/24",
             "172.65.0.0/16"
             ]
          "outboundTag": "freedom"
+      },
+      {
+         "type": "field",
+         "protocol": ["http", "tls", "bittorrent"],
+         "outboundTag": "blackhole"
+      },
+      {
+         "type": "field",
+         "port": "80,443",
+         "outboundTag": "blackhole"
       }
     ]
   }
