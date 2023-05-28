@@ -1,0 +1,46 @@
+{
+  "inbounds": [
+    {
+      "port": 25565, // 服务器监听端口
+      "protocol": "vmess",    // 主传入协议
+      "settings": {
+        "clients": [
+          {
+            "id": PassWordForChange,  
+            "alterId": 0
+          }
+        ]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",  // 主传出协议
+      "settings": {}
+    }
+  ],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "geoip:private" // 排除内网地址
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "ip": [
+          "172.65.0.0/16",
+          "209.222.114.0/24"
+        ],
+        "outboundTag": "proxy"
+      },
+      {
+        "type": "field",
+        "outboundTag": "blocked"
+      }
+    ],
+    "strategy": "rules",
+  }
+}
