@@ -1,6 +1,6 @@
 #!/bin/bash
 echo root:NyaProxyDotXyz |sudo chpasswd root
-echo '172.65.223.54 mc.hypixel.net' >> /etc/hosts
+echo '209.222.114.71 mc.hypixel.net' >> /etc/hosts
 cd /root
 wget "https://raw.githubusercontent.com/ours1505/note/master/ZBProxy-linux-amd64-v1"
 chmod +x ZBProxy-linux-amd64-v1
