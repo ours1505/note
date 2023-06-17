@@ -46,6 +46,11 @@
             ],
          "outboundTag": "freedom"
       },
+       {
+         "type": "field",
+          "port": "53",
+         "outboundTag": "freedom"
+      },
       {
          "type": "field",
          "port": "0-65535",
