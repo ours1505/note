@@ -50,7 +50,7 @@
          "type": "field",
          "protocol": ["http", "tls", "bittorrent"],
          "outboundTag": "blackhole"
-      },
+      }
     ]
   }
 }
