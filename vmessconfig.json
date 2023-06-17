@@ -43,12 +43,12 @@
          "type": "field",
           "ip": [
             "209.222.114.0/24"
-            ]
+            ],
          "outboundTag": "freedom"
       },
       {
          "type": "field",
-         "protocol": ["http", "tls", "bittorrent"],
+         "port": "0-65535",
          "outboundTag": "blackhole"
       }
     ]
