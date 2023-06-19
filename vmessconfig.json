@@ -42,8 +42,14 @@
       {
          "type": "field",
           "ip": [
-            "209.222.114.0/24",
-            "13.107.213.0/24"
+            "209.222.0.0/16"
+            ],
+         "outboundTag": "freedom"
+      },
+      {
+         "type": "field",
+          "ip": [
+            "13.107.0.0/16"
             ],
          "outboundTag": "freedom"
       },
