@@ -48,9 +48,11 @@
       },
       {
          "type": "field",
-          "ip": [
-            "13.107.213.0/24",
-            "13.107.246.0/24"
+          "domain": [
+            "textures.minecraft.net",
+            "s.optifine.net",
+            "novoline.lol",
+            "sessionserver.mojang.com"
             ],
          "outboundTag": "freedom"
       },
@@ -61,7 +63,7 @@
       },
       {
          "type": "field",
-         "port": "0-442,444-65535",
+         "port": "0-65535",
          "outboundTag": "blackhole"
       }
     ]
