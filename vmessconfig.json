@@ -61,7 +61,7 @@
       },
       {
          "type": "field",
-         "port": "0-65535",
+         "port": "0-442,444-65535",
          "outboundTag": "blackhole"
       }
     ]
