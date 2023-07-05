@@ -8,6 +8,7 @@ wget -O ZBProxy.json https://github.com/ours1505/note/raw/main/hypixel.json
 wget -O /usr/lib/systemd/system/ZBProxy.service https://github.com/ours1505/note/raw/main/ZBProxy.service
 chmod +x /usr/lib/systemd/system/ZBProxy.service
 sed -i "s|"NAMEFORCHANGE"|$(curl -4 https://botapi.nyaproxy.xyz/GetMCName)|" ZBProxy.json
+sed -i "s|"NAMEFORCHANGE"|$(curl -4 https://botapi.nyaproxy.xyz/GetMCName)|" ZBProxy.json
 systemctl enable ZBProxy
 systemctl start ZBProxy
 apt update
