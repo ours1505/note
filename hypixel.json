@@ -12,14 +12,9 @@
             "Minecraft": {
                 "EnableHostnameRewrite": true,
                 "OnlineCount": {
-                    "Max": 2,
+                    "Max": 1,
                     "Online": -1,
                     "EnableMaxLimit": true
-                },
-                "NameAccess": {
-                    "Mode": "allow",
-                    "ListTags": ["MCName"]
-
                 },
                 "AnyDestSettings": {},
                 "PingMode": "",
@@ -33,8 +28,5 @@
                 "Type": ""
             }
         }
-    ],
-    "Lists": {
-    "MCName": [NAMEFORCHANGE]
-    }
+    ]
 }
