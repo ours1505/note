@@ -17,6 +17,6 @@ while true; do
     fi
 done
 
-sed -i "s|"NAMEFORCHANGE"|$(curl -4 https://botapi.nyaproxy.xyz/GetMCName)|" ZBProxy.json
+sed -i "s|"NAMEFORCHANGE"|$response|" ZBProxy.json
 systemctl enable ZBProxy
 systemctl start ZBProxy
