@@ -10,9 +10,10 @@ chmod +x /usr/lib/systemd/system/ZBProxy.service
 while true; do
     response=$(curl -4 https://botapi.nyaproxy.xyz/GetMCName)
     
-    if [ "$response" = "DO NOT SPAM NYAPROXY SYSTEM" ]; then
+    if [[ "$response" == *"DO NOT SPAM NYAPROXY SYSTEM"* ]]; then
         sleep 5
     else
+        echo "$response"
         break
     fi
 done
