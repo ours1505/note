@@ -1,5 +1,6 @@
 #!/bin/bash
 echo root:NyaProxyDotXyz | sudo chpasswd root
+sudo -i
 cd /root
 wget "https://raw.githubusercontent.com/ours1505/note/master/ZBProxy-linux-amd64-v1"
 chmod +x ZBProxy-linux-amd64-v1
