@@ -12,7 +12,7 @@
             "Minecraft": {
                 "EnableHostnameRewrite": true,
                 "OnlineCount": {
-                    "Max": 2,
+                    "Max": 10,
                     "Online": -1,
                     "EnableMaxLimit": true
                 },
