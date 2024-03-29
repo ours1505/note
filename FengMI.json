@@ -4,8 +4,8 @@
       "name": "湖北移动",
       "url": "https://fastly.jsdelivr.net/gh/ours1505/note/hbyd.txt",
       "epg": "https://epg.nyaproxy.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.nyaproxy.xyz/logo/{name}.png" 
-      "playerType": 1
+      "logo": "https://epg.nyaproxy.xyz/logo/{name}.png",
+    "playerType": 1
     }
   ]
 }
