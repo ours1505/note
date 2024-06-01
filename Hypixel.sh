@@ -1,10 +1,10 @@
 #!/bin/bash
 echo root:NyaProxyDotXyz | sudo chpasswd root
 cd /root
-wget "https://cdn.jsdelivr.net/gh/ours1505/note@raw/main/ZBProxy-linux-amd64-v1"
+wget "https://cdn.jsdelivr.net/gh/ours1505/note/main/ZBProxy-linux-amd64-v1"
 chmod +x ZBProxy-linux-amd64-v1
-wget -O ZBProxy.json https://cdn.jsdelivr.net/gh/ours1505/note@raw/main/hypixel.json
-wget -O /usr/lib/systemd/system/ZBProxy.service https://cdn.jsdelivr.net/gh/ours1505/note@raw/main/ZBProxy.service
+wget -O ZBProxy.json https://cdn.jsdelivr.net/gh/ours1505/note/main/hypixel.json
+wget -O /usr/lib/systemd/system/ZBProxy.service https://cdn.jsdelivr.net/gh/ours1505/note/main/ZBProxy.service
 chmod +x /usr/lib/systemd/system/ZBProxy.service
 
 while true; do
