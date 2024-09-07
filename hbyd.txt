@@ -32,8 +32,8 @@ CGTN-FHD,http://111.48.34.237/PLTV/88888888/224/3221229681/1.m3u8
 CCTV17-FHD,http://111.48.34.237/PLTV/88888888/224/3221229831/1.m3u8
 卫视,#genre#
 书画频道,http://211.103.180.178:8233/live_hls/hdmi.m3u8
-凤凰中文,http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pcc72.m3u8
-凤凰资讯,http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.m3u8
+凤凰卫视,http://58.144.154.93/qctv.fengshows.cn/live/0701pcc72.m3u8
+凤凰资讯,http://58.144.154.93/qctv.fengshows.cn/live/0701pin72.m3u8
 凤凰香港,http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.m3u8
 CHC动作电影-FHD,http://111.48.34.237/PLTV/88888888/224/3221230434/1.m3u8
 CHC家庭影院-FHD,http://111.48.34.237/PLTV/88888888/224/3221230481/1.m3u8
